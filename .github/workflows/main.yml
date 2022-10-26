@@ -1,1 +1,10 @@
-this is first commit
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cicd
+  namespace: auto
+spec:
+  replica: 1
+  selector:
+    matchLabels:
+      name: cicd
